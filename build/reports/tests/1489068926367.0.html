@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta content="text/html; charset=UTF-8" http-equiv="Content-Type" /><meta content="noindex,nofollow" name="robots" /><meta content="IE=9; IE=8; IE=7; IE=EDGE" http-equiv="X-UA-Compatible" /><title>Simple Case Search</title><link type="text/css" href="font.css" rel="stylesheet" /><link type="text/css" href="master.css" rel="stylesheet" /><link type="text/css" href="navigation.css" rel="stylesheet" /><link type="text/css" href="wcca.css" rel="stylesheet" /><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script src="js/dropdowntabs.js" type="text/javascript"></script><script src="js/jquery-1.7.min.js" type="text/javascript"></script><script src="js/jquery.getUrlParam.js" type="text/javascript"></script><script type="text/javascript">
+      $(document).ready(function(){
+
+        // Calendar/Reports tabs will continue to use reportList.xsl but just hide rows
+        show_target = $(document).getUrlParam("show");
+        if (show_target) {
+          if (show_target.match(/^[a-zA-Z-]+$/)) {
+            $('.hidable').hide();
+            $('.' + show_target).show();
+          } else {
+            alert("Bad input in report filter.");
+          }
+        }
+      });
+    </script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-11284748-11']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="skip">
+        <a href="#mainContent">skip navigation</a>
+      </div>
+      <div id="head">
+        <div onclick="location.href='simpleCaseSearch.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6'" id="headtitle"></div><div id="topnavslide2">
+          <div class="slidetabsmenu" id="slidemenu">
+            <ul>
+              <li>
+                <a rel="menu1" href="searchList.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6">
+                  <span>search</span>
+                </a>
+              </li>
+              <li>
+                <a rel="menu2" href="reportList.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6?show=calendar">
+                  <span>calendar</span>
+                </a>
+              </li>
+              <li>
+                <a href="payFeesOnline.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6">
+                  <span>pay fees online</span>
+                </a>
+              </li>
+              <li>
+                <a rel="menu4" href="reportList.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6?show=report">
+                  <span>reports</span>
+                </a>
+              </li>
+              <li>
+                <a rel="menu5" href="helpList.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6">
+                  <span>help</span>
+                </a>
+              </li>
+              <li>
+                <a href="courtFeeShoppingCart.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6">
+                  <span>
+                view cart  (0 items)
+              </span>
+                </a>
+              </li>
+            </ul>
+          </div><br style="clear: left;" /><br class="IEonlybr" /><div style="top: -500px; left: 34px; visibility: hidden; " class="dropmenudiv" id="menu1">
+            <a href="simpleCaseSearch.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6">simple</a>
+            <a href="caseSearchSelect.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6">advanced</a>
+            <a href="dktedCvJdgmtSearch.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6">judgment</a>
+          </div>
+          <div style="top: -500px; left: 126px; visibility: hidden; " class="dropmenudiv" id="menu2">
+            <a href="reportList.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6?show=court-calendar">court</a>
+            <a href="reportList.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6?show=court-official-calendar">court official</a>
+            <a href="reportList.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6?show=attorney-calendar">attorney</a>
+            <a href="reportList.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6?show=issuing-agency-calendar">law enforcement</a>
+          </div>
+          <div style="left: 378px; top: 124px; visibility: hidden; " class="dropmenudiv" id="menu4">
+            <a href="reportList.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6?show=civil-judgment-events">civil judgment events</a>
+            <a href="reportList.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6?show=dcj-by-docket-date">docketed civil judgment events <br />   by docket date</a><a href="reportList.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6?show=dcj-by-judgment-date">docketed civil judgment events <br />   by judgment date</a>
+          </div>
+          <div style="left: 476px; top: 124px; visibility: hidden; " class="dropmenudiv" id="menu5">
+            <a href="help.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6">site help</a>
+            <a href="faq.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6">frequently asked questions</a>
+            <a href="links.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6">links</a>
+            <a href="captchaHelp.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6">captcha help</a>
+          </div>
+        </div>
+        <script type="text/javascript">
+	//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	tabdropdown.init("slidemenu")
+	</script>
+      </div>
+      <div id="mainContent">
+        <h1>Simple Case Search</h1>
+        <table width="100%" cellspacing="0" cellpadding="9" border="0" class="accentBar">
+          <form method="POST" action="simpleCaseSearch.do;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6"></form>
+            <tbody><tr>
+              <td bgcolor="white" colspan="2"></td></tr><tr>
+              <td valign="top" class="accentBar">
+                <div class="formFieldLabel">Party Name</div>
+              </td>
+              <td colspan="1" class="accentBar">
+                <div class="formField">
+            Last <input value="" size="20" name="partyName.lastName" class="formField" />    First <input value="" size="20" name="partyName.firstName" class="formField" />    Middle <input value="" size="10" name="partyName.middleName" class="formField" /><br /><input type="checkbox" checked="checked" value="true" name="partyName.showMissingMiddleNames" class="formField" /> When searching using the Middle Name field, also show parties without a middle name
+          </div><div class="formFieldHelp">
+            Enter at least 3 characters of the last name and either a first or middle name.  If you do not know the full name, enter part
+            of the name and the wildcard symbol: ' * '. 
+          </div>
+              </td>
+            </tr>
+            <tr>
+              <td valign="top" class="accentBar">
+                <div class="formFieldLabel">
+                    Birth Date
+                </div>
+              </td>
+              <td colspan="3" class="accentBar">
+                <div class="formField"><input type="text" value="" name="partyDateOfBirth.dateString" size="12" maxlength="15" class="formField" /> 
+                  
+                  <span class="formFieldExample">Example: 11/10/1977</span><br /><input type="checkbox" checked="checked" value="true" name="partyDateOfBirth.orNull" class="formField" /> When searching using the Birth Date field, also show parties without a birth date
+                </div>
+              </td>
+            </tr>
+            <tr class="accentBar">
+              <td valign="top">
+                <div class="formFieldLabel">
+            Business Name
+          </div>
+              </td>
+              <td colspan="1">
+                <div class="formField"><input value="" size="40" name="partyName.businessName" class="formField" /></div><div class="formFieldHelp">
+            Enter at least 3 characters of the business name.  If you do not know the full name, enter part
+            of the name and the wildcard symbol: ' * '. 
+                  <span class="formFieldExample">Example: Acme*</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="accentBar">
+                <div class="formFieldLabel">
+                      County
+                  </div>
+              </td>
+              <td colspan="3" class="accentBar">
+                <div class="formField">
+                  <div class="formField">
+                    <select name="countyNo" class="formField">
+                    <option value="0" class="formField">Statewide</option>
+                    <option value="1" class="formField">Adams               </option>
+                    <option value="2" class="formField">Ashland             </option>
+                    <option value="3" class="formField">Barron              </option>
+                    <option value="4" class="formField">Bayfield            </option>
+                    <option value="5" class="formField">Brown               </option>
+                    <option value="6" class="formField">Buffalo             </option>
+                    <option value="7" class="formField">Burnett             </option>
+                    <option value="8" class="formField">Calumet             </option>
+                    <option value="9" class="formField">Chippewa            </option>
+                    <option value="10" class="formField">Clark               </option>
+                    <option value="11" class="formField">Columbia            </option>
+                    <option value="12" class="formField">Crawford            </option>
+                    <option value="13" class="formField">Dane                </option>
+                    <option value="14" class="formField">Dodge               </option>
+                    <option value="15" class="formField">Door                </option>
+                    <option value="16" class="formField">Douglas             </option>
+                    <option value="17" class="formField">Dunn                </option>
+                    <option value="18" class="formField">Eau Claire          </option>
+                    <option value="19" class="formField">Florence            </option>
+                    <option value="20" class="formField">Fond du Lac         </option>
+                    <option value="21" class="formField">Forest              </option>
+                    <option value="22" class="formField">Grant               </option>
+                    <option value="23" class="formField">Green               </option>
+                    <option value="24" class="formField">Green Lake          </option>
+                    <option value="25" class="formField">Iowa                </option>
+                    <option value="26" class="formField">Iron                </option>
+                    <option value="27" class="formField">Jackson             </option>
+                    <option value="28" class="formField">Jefferson           </option>
+                    <option value="29" class="formField">Juneau              </option>
+                    <option value="30" class="formField">Kenosha             </option>
+                    <option value="31" class="formField">Kewaunee            </option>
+                    <option value="32" class="formField">La Crosse           </option>
+                    <option value="33" class="formField">Lafayette           </option>
+                    <option value="34" class="formField">Langlade            </option>
+                    <option value="35" class="formField">Lincoln             </option>
+                    <option value="36" class="formField">Manitowoc           </option>
+                    <option value="37" class="formField">Marathon            </option>
+                    <option value="38" class="formField">Marinette           </option>
+                    <option value="39" class="formField">Marquette           </option>
+                    <option value="72" class="formField">Menominee           </option>
+                    <option value="40" class="formField">Milwaukee           </option>
+                    <option value="41" class="formField">Monroe              </option>
+                    <option value="42" class="formField">Oconto              </option>
+                    <option value="43" class="formField">Oneida              </option>
+                    <option value="44" class="formField">Outagamie</option>
+                    <option value="45" class="formField">Ozaukee             </option>
+                    <option value="46" class="formField">Pepin               </option>
+                    <option value="47" class="formField">Pierce              </option>
+                    <option value="48" class="formField">Polk                </option>
+                    <option value="49" class="formField">Portage             </option>
+                    <option value="50" class="formField">Price               </option>
+                    <option value="51" class="formField">Racine              </option>
+                    <option value="52" class="formField">Richland            </option>
+                    <option value="53" class="formField">Rock                </option>
+                    <option value="54" class="formField">Rusk                </option>
+                    <option value="56" class="formField">Sauk                </option>
+                    <option value="57" class="formField">Sawyer              </option>
+                    <option value="58" class="formField">Shawano             </option>
+                    <option value="59" class="formField">Sheboygan           </option>
+                    <option value="55" class="formField">St Croix            </option>
+                    <option value="60" class="formField">Taylor              </option>
+                    <option value="61" class="formField">Trempealeau         </option>
+                    <option value="62" class="formField">Vernon              </option>
+                    <option value="63" class="formField">Vilas               </option>
+                    <option value="64" class="formField">Walworth            </option>
+                    <option value="65" class="formField">Washburn            </option>
+                    <option value="66" class="formField">Washington          </option>
+                    <option value="67" class="formField">Waukesha            </option>
+                    <option value="68" class="formField">Waupaca             </option>
+                    <option value="69" class="formField">Waushara            </option>
+                    <option value="70" class="formField">Winnebago           </option>
+                    <option value="71" class="formField">Wood                </option>
+                    </select>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td valign="top" class="accentBar">
+                <div class="formFieldLabel">
+                      Case Number
+                  </div>
+              </td>
+              <td class="accentBar">
+                <div class="formField"><input type="text" value="" name="caseNo.caseNo" maxlength="20" class="formField" /> Example: Type 02cf1 for case 2002CF000001
+                  </div>
+              </td>
+            </tr>
+            <tr class="compAccentBar">
+              <td></td><td colspan="2">
+                <span class="recordsPerPage">Records/Screen </span>
+                <select name="recordsPerPage" class="formField">
+                  <option value="5" class="formField">5</option>
+                  <option value="10" class="formField">10</option>
+                  <option value="15" class="formField">15</option>
+                  <option value="20" class="formField">20</option>
+                  <option selected="selected" value="25" class="formField">25</option>
+                  <option value="50" class="formField">50</option>
+                </select>
+                <span class="recordsPerPage"> </span>
+              </td>
+            </tr>
+            <tr class="compAccentBarBot">
+              <td></td><td align="left"><input type="submit" value="Search" name="action" class="formField" />  
+              <input type="submit" value="Reset" name="formAction" class="formField" /></td>
+            </tr>
+          
+        </tbody></table>
+      </div>
+      <div id="footer">
+        <p class="fltrt">
+          <a href="noticeToEmployers.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6">notice to employers</a>
+			|
+			
+          <a href="accuracy.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6">accuracy</a>
+			|
+			
+          <a href="AB0304.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6">public records on the internet</a>
+			|
+			
+          <a href="informationonothersites.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6">information on other sites</a>
+			|
+			
+          <a href="rest.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6">data extraction option</a>
+			|
+			
+          <a href="rss.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6">rss</a>
+			|
+			
+          <a href="courtTerms.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6">court terms</a>
+        </p>
+        <p>
+			Technical problems?
+			
+          <a href="contact.xsl;jsessionid=8825AA5A2140A08949F0329E28586FD5.render6">Contact us</a>.
+		
+        </p>
+      </div>
+    </div>
+  
+</body></html>
